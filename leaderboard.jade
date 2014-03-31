@@ -1,0 +1,23 @@
+head
+  title Leaderboard
+
+body
+  #outer
+    +leaderboard
+
+template(name="leaderboard")
+  #leaderboard
+    each players
+      +player
+
+  if selected_name
+    .details
+      .name= selected_name
+      input.inc(type="button" value="Give 5 points")
+  else
+    .none Click a player to select
+
+template(name="player")
+  .player(class=selected)
+    span.name=  name
+    span.score= score
