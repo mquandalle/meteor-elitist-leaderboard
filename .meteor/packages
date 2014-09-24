@@ -6,6 +6,6 @@
 standard-app-packages
 autopublish
 insecure
-stylus
 coffeescript
-jade
+stylus
+mquandalle:jade
